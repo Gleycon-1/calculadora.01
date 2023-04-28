@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: gleycon;
+  src:url(font.html/fonte-c.otf);
+  format ("opentype")
+ }
+
+.gleycon {
+  font-family: gleycon;
+  background-color: #082ce9;
+  color: #ffffff;
+  text-align: center;
+  padding: 12px;
+  margin: auto;
+  border-radius: 10px 10px 0 0;
+  margin: -26px -15px 0 -15px;
+}
+
+body {
+  background-image: linear-gradient(to right, #ffffff, #00fffa);
+}
+
+main {
+  margin: 15% auto;
+  background-color: #000000;
+  padding: 15px;
+  padding-top: 1.5em;
+  max-width: 400px;
+  border-radius: 2%;
+}
+p > .text {
+  display: block;
+  background-color: #ffffff;
+  color: #000000;
+  margin: auto;
+  margin-bottom: 5%;
+  width: 60%;
+  padding: 3px;
+  padding-top: 2.5em;
+  text-align: right;
+}
+
+ div {
+  display: block;
+  margin: auto;
+  border: solid 2px #082ce9;
+  padding: 5px;
+  max-width: 70%;
+}
+
+button {
+  margin: 3px;
+  border: solid 1px #000000;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 1.5em;
+  width: 19%;
+  font-style: justyfe;
+ }
+ button:hover {
+   background-color: #0000005a;
+   color: #082ce9;
+   transition: 1s;
+ }
+ 
+ .somar {
+  margin: 3px;
+  border: solid 1px #000000;
+  border-radius: ;
+  padding: 5px;
+  font-size: 2em;
+  width: 18%;
+  padding: 10px 0 10px 0;
+  font-style: justyfe;
+ }
+.somar:hover {
+   background-color: #007de9;
+   color: #082ce9;
+   transition: 1s;
+ }
+ 

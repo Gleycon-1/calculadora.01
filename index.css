@@ -22,7 +22,9 @@ body {
 }
 
 main {
-  margin: 15% auto;
+  position: relative;
+  height: 500px;
+  margin: auto;
   background-color: #000000;
   padding: 15px;
   padding-top: 1.5em;
@@ -36,17 +38,20 @@ p > .text {
   margin: auto;
   margin-bottom: 5%;
   width: 60%;
+  height: 40px;
   padding: 3px;
   padding-top: 2.5em;
   text-align: right;
 }
 
  div {
-  display: block;
-  margin: auto;
+  position: absolute;
+  width: 250px;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
   border: solid 2px #082ce9;
   padding: 5px;
-  max-width: 70%;
 }
 
 button {
@@ -75,7 +80,7 @@ button {
   font-style: justyfe;
  }
 .somar:hover {
-   background-color: #007de9;
+   background-color: #1aff86;
    color: #082ce9;
    transition: 1s;
  }

@@ -1,48 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP8ZM5ySl8hO5AT4Jr3a9jGowKgmNiYgQ1pQ&usqp=CAU" type="image/x-icon">
-  <link rel="stylesheet" href="index.css">
-  <title>Calculadora</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="stylesheet" href="index.css">
+<title>Calculadora</title>
 </head>
+
 <body>
- <main>
-   <h1 class="gleycon">Calculadora</h1>
-   <p>
-     <input class="text" type="text" value="0.">
-   </p>
-   <div>
-   <button>AC</button>
-   <button>( )</button>
-   <button>%</button>
-   <button>÷</button>
-   <br>
-    <button>1</button>
-    <button>2</button>
-    <button>3</button>
-    <button>×</button>
-    <br>
-    <button>4</button>
-    <button>5</button>
-    <button>6</button>
-    <button>-</button>
-    <br>
-    <button>7</button>
-    <button>8</button>
-    <button>9</button>
-    <button>+</button>
-    <br>
-    <button>0</button>
-    <button>,</button>
-    <button>
-<i stylstylee='font-size: 10px' class="fas" >&#xf55a;</i></button>
- <input class="somar" type="submit" value="=">
-    </div>
- </main> 
-  
+<header class="gleycon">
+Calculadora
+</header>
+<main>
+<input class="text" type="text" value="">
+<section>
+<button>AC</button>
+<button>( )</button>
+<button>%</button>
+<button>÷</button>
+
+<button>1</button>
+<button>2</button>
+<button>3</button>
+<button>×</button>
+
+<button>4</button>
+<button>5</button>
+<button>6</button>
+<button>-</button>
+
+<button>7</button>
+<button>8</button>
+<button>9</button>
+<button>+</button>
+
+<button>0</button>
+<button>.</button>
+<button>ECL</button>
+
+<input class="somar" type="submit" value="=">
+</section>
+</main>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+const input = document.querySelector('.text');
+const buttons = document.querySelectorAll('button');
+const submitButton = document.querySelector('.somar');
+
+buttons.forEach(button => {
+button.addEventListener('click', function () {
+const buttonText = button.textContent;
+
+if (buttonText === 'ECL') {
+input.value = input.value.length > 1 ? input.value.slice(0, -1): '0.';
+} else if (buttonText === 'AC') {
+input.value = '0.';
+} else if (buttonText === '÷') {
+input.value += '/';
+} else if (buttonText === '×') {
+input.value += '*';
+}
+
+
+else if (buttonText === ',') {
+  const lastChar = input.value.slice(-1);
+
+  if (!input.value.includes('.') || /\D\,$/.test(lastChar) || /\,$/.test(input.value)) {
+    input.value += '.';
+  }
+}
+
+
+
+
+
+else {
+if (input.value === '0.' && /\d/.test(buttonText)) {
+input.value = buttonText;
+} else {
+input.value += buttonText;
+}
+}
+});
+});
+
+submitButton.addEventListener('click', function () {
+try {
+input.value = eval(input.value.replace('×', '*').replace('÷', '/'));
+} catch (error) {
+input.value = 'Erro';
+}
+});
+});
+</script>
+
+
+
 </body>
 </html>

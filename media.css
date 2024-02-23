@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 770px) {
+
+
+  header {
+    display: block;
+    margin: auto;
+    font-family: Monospace;
+    background-color: #082ce9;
+    max-width: 800px;
+    font-size: 80px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 5px 5px 5px #000000;
+    padding: 15px;
+    border-radius: 5px 5px 0 0;
+    margin-top: 5%;
+  }
+
+  body {
+    background-color: #000;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs3A3FVbCh4oEEixUWtHGq_M3eVQef__iU7w&usqp=CAU');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 99vh;
+  }
+
+  .text {
+    display: block;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0 auto;
+    width: 700px;
+    height: 150px;
+    padding: 3px;
+    text-align: left;
+    font-size: 40px;
+  }
+
+  main {
+    position: relative;
+    height: 90em;
+    margin: auto;
+    background-color: #000000;
+    padding: 15px;
+    padding-top: 1.5em;
+    max-width: 800px;
+    border-radius: 0 0 20px 20px;
+  }
+
+  section {
+    direction: block;
+    margin: 0 auto;
+    margin-top: 2%;
+    width: 600px;
+    padding: 5px;
+  }
+
+  button {
+    margin: 5px;
+    border: solid 1px #000000;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 3em;
+    width: 130px;
+    height: 160px;
+    font-style: justify;
+  }
+
+  button:hover {
+    background-color: #0000005a;
+    color: #082ce9;
+    transition: 0.3s;
+  }
+
+  .somar {
+    margin: 5px;
+    border: solid 1px #000000;
+    border-radius: 50%;
+    padding: 10px 0;
+    font-size: 3em;
+    width: 130px;
+    height: 160px;
+    font-style: justify;
+  }
+
+  .somar:hover {
+    background-color: #1aff86;
+    color: #082ce9;
+    transition: 0.2s;
+  }
+
+
+
+}

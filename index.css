@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+
+body {
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
 header {
   display: block;
   margin: auto;
@@ -13,16 +22,6 @@ header {
   padding: 15px;
   border-radius: 5px 5px 0 0;
   margin-top: 5%;
-}
-
-body {
-  color: #000;
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUnnsJHDUX-5uno6pu0DW7ZWn1uI3va8dBhQ&usqp=CAU');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 100vh;
-
 }
 
 main {

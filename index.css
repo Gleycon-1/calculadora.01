@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.gleycon {
+header {
   display: block;
   margin: auto;
   font-family: Monospace;
@@ -12,15 +12,22 @@
   text-shadow: 2px 2px 2px #000000;
   padding: 15px;
   border-radius: 5px 5px 0 0;
+  margin-top: 5%;
 }
 
 body {
-  background-image: linear-gradient(to right, #ffffff, #00fffa);
+  color: #000;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUnnsJHDUX-5uno6pu0DW7ZWn1uI3va8dBhQ&usqp=CAU');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+
 }
 
 main {
   position: relative;
-  height: 500px;
+  height: 30em;
   margin: auto;
   background-color: #000000;
   padding: 15px;
@@ -49,19 +56,20 @@ section {
 }
 
 button {
-  margin: 3px;
+  margin: 5px;
   border: solid 1px #000000;
   border-radius: 50%;
   padding: 5px;
   font-size: 1.5em;
   width: 19%;
+  height: 20%;
   font-style: justify;
 }
 
 button:hover {
   background-color: #0000005a;
   color: #082ce9;
-  transition: 1s;
+  transition: 0.3s;
 }
 
 .somar {

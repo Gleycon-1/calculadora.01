@@ -63,7 +63,7 @@
     border: solid 1px #000000;
     border-radius: 50%;
     padding: 5px;
-    font-size: 3em;
+    font-size: 4em;
     width: 130px;
     height: 160px;
     font-style: justify;
@@ -72,17 +72,17 @@
   button:hover {
     background-color: #0000005a;
     color: #082ce9;
-    transition: 0.3s;
+    transition: 0.2s;
   }
 
   .somar {
     margin: 5px;
+    margin-left: 72%;
     border: solid 1px #000000;
-    border-radius: 50%;
-    padding: 10px 0;
-    font-size: 3em;
-    width: 130px;
+    border-radius: 5%;
+    font-size: 5em;
     height: 160px;
+    width: 130px;
     font-style: justify;
   }
 

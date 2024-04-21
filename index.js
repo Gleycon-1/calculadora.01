@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function () {
   const input = document.querySelector('.text');
   const buttons = document.querySelectorAll('button');
@@ -18,13 +17,11 @@ document.addEventListener('DOMContentLoaded', function () {
         input.value += '*';
       } else if (buttonText === ',') {
         const lastChar = input.value.slice(-1);
-
-        if (!input.value.includes('.') || /\D\,$/.test(lastChar) || /\,$/.test(input.value)) {
-          input.value += '.';
+        if (!input.value.includes(',') && !/\D$/.test(lastChar)) {
+          input.value += ',';
         }
       } else if (buttonText === '(') {
         const lastChar = input.value.slice(-1);
-
         if (lastChar === undefined || /\D/.test(lastChar)) {
           input.value += '(';
         } else {
@@ -42,7 +39,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   submitButton.addEventListener('click', function () {
     try {
-      input.value = eval(input.value.replace(/%/g, '/100*').replace('×', '*').replace('÷', '/'));
+      const cleanInput = input.value.replace(/,/g, '.');
+      input.value = eval(cleanInput.replace(/%/g, '/100*').replace('×', '*').replace('÷', '/'));
     } catch (error) {
       input.value = 'Erro';
     }
